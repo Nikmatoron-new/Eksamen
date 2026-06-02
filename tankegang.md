@@ -31,3 +31,5 @@ vi har aldri jobbet med brannmurer hvordan skal jeg vite hvordan og sette dette 
 Men uansett så ser det ut som jeg skal sette opp disse forskjellige tingene til docker filer.
 
 Jeg bare brukte en av de docker compose yml filene jeg alerede hadde lagd fra en annen prosekt.
+
+jeg vet ikke om jeg vill risikere å prøve og bli ferdig med brannmuren men jeg kan prlve, bare veldi gusiker om jeg får det til.
