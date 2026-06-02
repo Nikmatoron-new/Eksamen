@@ -1,3 +1,5 @@
+version: '3.9'
+
 services:
   database:
     image: postgres:15-alpine
@@ -7,16 +9,18 @@ services:
       POSTGRES_PASSWORD: mysecretpassword
       POSTGRES_DB: produkter
     volumes:
-      - ssr-db:/var/lib/postgresql/data
-      - ./serverside-rendering/test.sql:/docker-entrypoint-initdb.d/init.sql:ro
+      - postgres-data:/var/lib/postgresql/data
+      - ./Produkter.sql:/docker-entrypoint-initdb.d/init.sql:ro
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 5s
       timeout: 5s
       retries: 10
+
   webserver:
     build:
-      context: ./serverside-rendering
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "3000:3000"
     depends_on:
@@ -28,3 +32,7 @@ services:
       PGPASSWORD: mysecretpassword
       PGHOST: database
       PGPORT: 5432
+      PGDATABASE: produkter
+
+volumes:
+  postgres-data:
