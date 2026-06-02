@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS produkter (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  id SERIAL PRIMARY KEY,
   navn TEXT NOT NULL,
   beskrivelse TEXT,
-  pris REAL NOT NULL,
+  pris NUMERIC NOT NULL,
   bilde TEXT
 );

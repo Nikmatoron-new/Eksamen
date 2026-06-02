@@ -27,3 +27,7 @@ den gjorde for mye, jeg ville helst ha gjrodt dette selv men jeg selv etter å h
 Viste seg jeg glemte om bilde lenker...
 
 vi har aldri jobbet med brannmurer hvordan skal jeg vite hvordan og sette dette here opp, jeg kan prøve men jeg er veldig forvirret pga hvor åpne disse oppgavene er. Det er ikke det enkleste når det er så mange valg.
+
+Men uansett så ser det ut som jeg skal sette opp disse forskjellige tingene til docker filer.
+
+Jeg bare brukte en av de docker compose yml filene jeg alerede hadde lagd fra en annen prosekt.
