@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1><%= title %></h1>
+    <nav>
+      <a href="/admin">Tilbake til admin</a>
+      <a href="/">Kundevisning</a>
+    </nav>
+  </header>
+
+  <main>
+    <form action="<%= action %>" method="post">
+      <label>
+        Navn
+        <input type="text" name="navn" value="<%= produkt.navn %>" required>
+      </label>
+
+      <label>
+        Beskrivelse
+        <textarea name="beskrivelse"><%= produkt.beskrivelse %></textarea>
+      </label>
+
+      <label>
+        Pris
+        <input type="number" name="pris" value="<%= produkt.pris %>" step="0.01" required>
+      </label>
+
+      <label>
+        Bilde-URL
+        <input type="text" name="bilde" value="<%= produkt.bilde %>">
+      </label>
+
+      <button type="submit">Lagre</button>
+    </form>
+  </main>
+</body>
+</html>

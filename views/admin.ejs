@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Produkter</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Admin</h1>
+    <nav>
+      <a href="/">Kundevisning</a>
+      <a href="/admin/nytt">Legg til nytt produkt</a>
+    </nav>
+  </header>
+
+  <main>
+    <% if (produkter.length === 0) { %>
+      <p>Ingen produkter registrert ennå.</p>
+    <% } else { %>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Navn</th>
+            <th>Pris</th>
+            <th>Handling</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% produkter.forEach((produkt) => { %>
+            <tr>
+              <td><%= produkt.id %></td>
+              <td><%= produkt.navn %></td>
+              <td><%= produkt.pris %> kr</td>
+              <td>
+                <a href="/admin/rediger/<%= produkt.id %>">Rediger</a>
+                <form action="/admin/slett/<%= produkt.id %>" method="post" class="slett-form">
+                  <button type="submit">Slett</button>
+                </form>
+              </td>
+            </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    <% } %>
+  </main>
+</body>
+</html>

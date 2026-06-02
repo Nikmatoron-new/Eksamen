@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  color: #333;
+}
+
+header {
+  background: #1d4ed8;
+  color: white;
+  padding: 16px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  margin-right: 12px;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+.produkt-liste {
+  list-style: none;
+  padding: 0;
+}
+
+.produkt-liste li {
+  background: white;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  padding: 14px;
+  border-radius: 6px;
+}
+
+.pris {
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.slett-form {
+  display: inline;
+}
+
+button {
+  background: #1d4ed8;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+form label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 120px;
+}

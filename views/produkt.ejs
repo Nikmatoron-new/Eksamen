@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= produkt.navn %></title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1><%= produkt.navn %></h1>
+    <nav>
+      <a href="/">Tilbake til produkter</a>
+      <a href="/admin">Admin</a>
+    </nav>
+  </header>
+
+  <main>
+    <% if (produkt.bilde) { %>
+      <img src="<%= produkt.bilde %>" alt="<%= produkt.navn %>">
+    <% } %>
+    <p><%= produkt.beskrivelse %></p>
+    <p class="pris">Pris: <%= produkt.pris %> kr</p>
+  </main>
+</body>
+</html>

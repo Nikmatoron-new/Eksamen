@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produktliste</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Produkter</h1>
+    <nav>
+      <a href="/admin">Admin</a>
+    </nav>
+  </header>
+
+  <main>
+    <% if (produkter.length === 0) { %>
+      <p>Ingen produkter i databasen ennå.</p>
+    <% } else { %>
+      <ul class="produkt-liste">
+        <% produkter.forEach((produkt) => { %>
+          <li>
+            <a href="/produkt/<%= produkt.id %>">
+              <strong><%= produkt.navn %></strong>
+            </a>
+            <p><%= produkt.beskrivelse %></p>
+            <p class="pris">Pris: <%= produkt.pris %> kr</p>
+          </li>
+        <% }); %>
+      </ul>
+    <% } %>
+  </main>
+</body>
+</html>
