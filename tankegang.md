@@ -1,3 +1,6 @@
+Dette er da bare mine tanker gjennom hele denne eksamen.
+
+
 index hjemmeside
 css for litt padding
 
@@ -20,3 +23,7 @@ dette gir ikke mening i det hele tatt.
 jeg bruker ai til å hjelpe meg forstå hvordan å gå gjennom oppgaven, akuratt som jeg bruke denne markdown filen for mine egne tanker under oppgaven.
 
 den gjorde for mye, jeg ville helst ha gjrodt dette selv men jeg selv etter å ha søkt og lest opp atter alle disse månede løpte det fra meg. Idoit.
+
+Viste seg jeg glemte om bilde lenker...
+
+vi har aldri jobbet med brannmurer hvordan skal jeg vite hvordan og sette dette here opp, jeg kan prøve men jeg er veldig forvirret pga hvor åpne disse oppgavene er. Det er ikke det enkleste når det er så mange valg.
