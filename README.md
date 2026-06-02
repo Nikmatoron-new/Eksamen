@@ -71,6 +71,10 @@ docker compose up --build
 - Kundevisning: [http://localhost:3000](http://localhost:3000)
 - Admin-side: [http://localhost:3000/admin](http://localhost:3000/admin)
 
+hvis ikke disse fungere bruk: 
+- Kundevisning: [http://localhost](http://localhost)
+- Admin-side: [http://localhost/admin](http://localhost/admin)
+
 **Stoppe serveren:**
 
 Trykk `Ctrl+C` i terminalen.
@@ -224,6 +228,8 @@ services:
 
 **Brukerens perspektiv:**
 1. Åpner [http://localhost:3000](http://localhost:3000)
+eller
+1. Åpner [http://localhost](http://localhost)
 
 **Serverens perspektiv:**
 
@@ -275,6 +281,8 @@ app.post('/admin/nytt', async (req, res) => {
 ```
 
 6. Produktet vises nå på [http://localhost:3000](http://localhost:3000)
+eller
+6. Produktet vises nå på [http://localhost](http://localhost)
 
 ---
 
