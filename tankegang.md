@@ -33,3 +33,4 @@ Men uansett så ser det ut som jeg skal sette opp disse forskjellige tingene til
 Jeg bare brukte en av de docker compose yml filene jeg alerede hadde lagd fra en annen prosekt.
 
 jeg vet ikke om jeg vill risikere å prøve og bli ferdig med brannmuren men jeg kan prlve, bare veldi gusiker om jeg får det til.
+ok jeg prøvde med brannmuren flere ganger nå men måtte altid restore checkpoint fordi ingenting fungerte, jeg vet ikke helt hva jeg gjør galt. kanskje det var fordi jeg var på samme ip hele tiden, jeg vet ikke. Jegh kunne heller ikke sette opp noen subnett, så jeg vet ikke helt.
